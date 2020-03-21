@@ -1,7 +1,7 @@
 name: mvp_core
 description: A generic Flutter implementation of the MVP (model/view/presenter) pattern which allows for more testable code.
 version: 0.0.2
-homepage: https://www.hatfeather.io/
+homepage: https://hatfeather.io
 repository: https://github.com/HatFeather/mvp_core
 
 environment:
