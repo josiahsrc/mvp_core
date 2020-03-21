@@ -1,5 +1,5 @@
 /// This model code can be anything you want. I'm using
-/// a 'Service' to house all the business logic for
+/// a singleton 'Service' to house all the business logic for
 /// updating the model and a 'Model Object' to store the
 /// data. But you can and should use whatever pattern you
 /// want.

@@ -74,8 +74,8 @@ class Presenter<V extends IView> implements IPresenter {
   void update() {}
 
   /// A [LifeCycle] finalization method (called only
-  /// once after [start] to 'finish' this presenter's job). 
-  /// This presenter will still be coupled to the view when 
+  /// once after [start] to 'finish' this presenter's job).
+  /// This presenter will still be coupled to the view when
   /// this is called.
   ///
   /// Within the flutter framework, this method is
