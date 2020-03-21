@@ -7,6 +7,11 @@ the flutter framework.
 
 ## Getting Started
 
+The following code is a stubbed out tutorial of how to use this
+package. See the `lib/examples` directory in the repository of this
+package for a more completed example. You can find the repository
+[here](https://github.com/HatFeather/mvp_core).
+
 <b>Create the presenter (and the interfaces it expects).</b> 
 I recommend placing these 3 classes in the same file because 
 they are all closely related to eachother.
@@ -78,3 +83,11 @@ framework.
 
 > "The MVP pattern is a variation of the MVC pattern that 
 > results in more testable code." - Ken Rodham
+
+Since the coupling between the views and the presenters
+is strictly through interfaces, it's easy to create a `MockView`
+to test the presenter. See the `examples` directory of this
+package's repository for examples of how to do this.
+
+To test the widgets, you can simply perform the same `widget-tests` 
+that you would perform in any other application.
