@@ -1,0 +1,1 @@
+library mvp_core;
