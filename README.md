@@ -86,8 +86,8 @@ framework.
 
 Since the coupling between the views and the presenters
 is strictly through interfaces, it's easy to create a `MockView`
-to test the presenter. See the `examples` directory of this
-package's repository for examples of how to do this.
+to test the presenter. See the `example` directory of this
+package's repository for and example of how to do this.
 
 To test the widgets, you can simply perform the same `widget-tests` 
 that you would perform in any other application.
