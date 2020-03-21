@@ -8,8 +8,8 @@ the flutter framework.
 ## Getting Started
 
 The following code is a stubbed out tutorial of how to use this
-package. See the `lib/examples` directory in the repository of this
-package for a more completed example. You can find the repository
+package. See the `example` directory in the repository of this
+package for a more complete example. You can find the repository
 [here](https://github.com/HatFeather/mvp_core).
 
 <b>Create the presenter (and the interfaces it expects).</b> 
