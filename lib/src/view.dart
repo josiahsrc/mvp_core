@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'presenter.dart';
 import 'life_cycle.dart';
 
-abstract class IView {}
+abstract class IView with ILifeCycle {}
 
-abstract class View<P extends IPresenter> implements ILifeCycle {
+abstract class View<P extends IPresenter> implements IView {
   P get presenter;
 
   @mustCallSuper
@@ -47,13 +47,17 @@ abstract class StateView<T extends StatefulWidget, P extends IPresenter>
   void initState() {
     super.initState();
 
-    this._presenter = bindPresenter();
+    this._presenter = createPresenter();
+    this._presenter.bind(this);
     super.awake();
   }
 
   @override
   void dispose() {
     super.finish();
+    this._presenter.unbind();
+    this._presenter = null;
+
     super.dispose();
   }
 
@@ -63,11 +67,11 @@ abstract class StateView<T extends StatefulWidget, P extends IPresenter>
 
     if (!_initialized) {
       super.start();
-      _initialized = true;
+      this._initialized = true;
     }
 
     super.update();
   }
 
-  P bindPresenter();
+  P createPresenter();
 }
