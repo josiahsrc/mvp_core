@@ -59,6 +59,7 @@ class _MyPageState extends StateView<MyPage, IMyPresenter> implements IMyView {
 }
 ~~~~
 
+
 ## Purpose
 
 ### Weak coupling
@@ -82,7 +83,7 @@ framework.
 ## Testing 
 
 > "The MVP pattern is a variation of the MVC pattern that 
-> results in more testable code." - Ken Rodham
+> results in more testable code."
 
 Since the coupling between the views and the presenters
 is strictly through interfaces, it's easy to create a `MockView`
